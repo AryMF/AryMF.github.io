@@ -22,7 +22,9 @@ const main = () => {
         isMobile = true;
         horizontalScroll = false;
     }
-    console.log(`isMobile ${isMobile}`);
+    console.info('%cMade with ❤️ by Ary\n%cYou can find the code at:', 'color: blue; font-size:24px;', 'color: palevioletred; font-size:18px;');
+    console.log('https://github.com/AryMF/AryMF.github.io');
+    
 };
 
 const myFunction = () => {
