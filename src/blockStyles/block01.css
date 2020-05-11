@@ -1,0 +1,18 @@
+.part01 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+.welcome {
+    margin: 0px 0px 15px 20px;
+    font-size: 10vw;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    .welcome {
+        margin: 0px 0px 20px 20px;
+        font-size: 72px;
+    }
+}

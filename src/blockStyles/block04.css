@@ -1,0 +1,18 @@
+.part04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+}
+
+.other {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+}

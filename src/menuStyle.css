@@ -1,0 +1,88 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 20%;
+    height: fit-content;
+    padding-top: 10px;
+}
+
+header.hidden {
+    background-color: transparent;
+}
+
+.menu-element {
+    margin: 15px 0px 15px 20px;
+    font-size: 28px;
+}
+
+.menu-element:hover, .list-menu-element:hover{
+    color: var(--highlight-color);
+}
+
+.list-menu {
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+    width: 20%;
+    height: 0px;    
+    background-color: var(--menu-background);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: all .5s linear;
+}
+
+.list-menu.show {
+    padding-top: 48px;
+    height: 250px;
+}
+
+.list-menu-element {
+    margin: 15px 0px 15px 20px;
+    font-size: 28px;
+    cursor: crosshair;
+    visibility: hidden;
+}
+
+.list-menu-element.part-one {
+    transition: all .3s linear .0s;
+}
+.list-menu-element.part-two {
+    transition: all .2s linear .0s;
+}
+.list-menu-element.part-three {
+    transition: all .1s linear .0s;
+}
+.list-menu-element.part-four {
+    transition: all .05s linear .0s;
+}
+
+.list-menu-element.show {
+    visibility: visible;
+    transition: all .5s linear .4s;
+}
+
+.list-menu-element.part-one.show {
+    transition: all .5s linear .1s;
+}
+.list-menu-element.part-two.show {
+    transition: all .5s linear .2s;
+}
+.list-menu-element.part-three.show {
+    transition: all .5s linear .3s;
+}
+.list-menu-element.part-four.show {
+    transition: all .5s linear .4s;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    header {
+        width: 50%;
+    }
+    .list-menu {
+        width: 50%;
+    }
+}

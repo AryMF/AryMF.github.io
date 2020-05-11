@@ -1,0 +1,17 @@
+.part02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin: 20px 20px;
+    font-size: 10vw;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    .text {
+        font-size: 72px;
+    }
+}

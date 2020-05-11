@@ -1,0 +1,89 @@
+@import './menuStyle.css';
+@import './blockStyles/textAnimations.css';
+@import './blockStyles/block01.css';
+@import './blockStyles/block02.css';
+@import './blockStyles/block03.css';
+@import './blockStyles/block04.css';
+
+:root {
+    --backgroud: #372D3B;
+    --menu-background: #2A1E2F;
+    --highlight-color: #D94362;
+    --text-color: #D4D2BB;
+}
+
+[data-theme="light"] {
+    --backgroud: #F8F3EF;
+    --menu-background: #EDE5DF;
+    --highlight-color: #D94362;
+    --text-color: #353535;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.outer-wrapper {
+    width: 100vw;
+    height: 100vh; 
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: var(--backgroud);
+}
+
+.outer-wrapper.horizontal-style{
+    width: 100vh;
+    height: 100vw;    
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+.outer-wrapper.second-style{
+    width: 100vh;
+    height: 100vw;    
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.inner-wraper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.inner-wraper.horizontal-style{
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.screen-block {
+    width: 100vw;
+    height: 100vh;
+}
+
+.part02 {
+    /* background-color: lightsalmon; */
+}
+
+.part03 {
+    /* background-color: lightgreen; */
+}
+
+.part04 {
+    height: 300vh !important;
+    /* background-color: pink; */
+}

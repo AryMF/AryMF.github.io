@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ariadne's portfolio</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://kit.fontawesome.com/45e1ab001f.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1> Here goes something awesome! </h1>
+<body data-theme="dark" onload="main()">
+    <header>
+        <span class="menu-element" style="z-index: 10;"><i id="burgerButton" class="fas fa-bars"></i></span>
+        <span class="menu-element" style="z-index: 10;"><i id="themeButton" class="fas fa-moon"></i></span>        
+    </header>
+    <div  class="list-menu"> 
+        <span class="list-menu-element part-one" onclick="moveToSection(0)"> Parte 00 </span>
+        <span class="list-menu-element part-two" onclick="moveToSection(1)"> Parte 01 </span>
+        <span class="list-menu-element part-three" onclick="moveToSection(2)"> Parte 02 </span>
+        <span class="list-menu-element part-four" onclick="moveToSection(3)"> Parte 03 </span>
+    </div>
+    <div class="outer-wrapper " onscroll="myFunction()">
+        <div class="inner-wraper ">
+            <div class="screen-block part01">
+                <!-- <h1 class="text-focus-in"> Hi, Im Ariadne<br/>and this is my<br/>portfolio.</h1> -->
+                <p class="welcome text-focus-in"> Hi, Im <br/> Ariadne <br/> and this is <br/> my portfolio.</p>
+            </div>
+            <div class="screen-block part02">
+                <p class="text"> work </p>
+            </div>
+            <div class="screen-block part03">
+                <p class="text"> in </p>
+            </div>
+            <div class="screen-block part04">
+                <div class="other">
+                    <p class="text"> progress </p> <br/>
+                </div>
+                <div class="other" style="background-color: lightcoral;">
+                    <p class="text"> ↓ </p> <br/>
+                </div>  
+                <div class="other" style="background-color: lightseagreen;">
+                    <p class="text"> ♥ </p> <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/main.js" async defer></script>
 </body>
 </html>
